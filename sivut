@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jätteeks Jääny – Liity sähköpostilistalle</title>
+  <meta name="description" content="Liity Jätteeks Jääny -sähköpostilistalle ja saat ensimmäisenä tiedon tarjouksista, kierrätysvinkeistä ja palveluista Oulun alueella." />
+  <meta property="og:title" content="Jätteeks Jääny – Liity sähköpostilistalle" />
+  <meta property="og:description" content="Kun jää ylimääräistä – me haetaan!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fi_FI" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Jätteeks+Jääny" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    :root{
+      --dark:#2E4D34;
+      --light:#81C784;
+      --ink:#1E1E1E;
+      --paper:#F4F1ED;
+    }
+    html,body{height:100%}
+    body{
+      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+      background:var(--paper); color:var(--ink); line-height:1.6;
+    }
+    header{
+      background:var(--dark); color:white; padding:48px 24px; text-align:center;
+    }
+    header h1{ margin:0 0 8px; font-size: clamp(28px, 4vw, 44px); letter-spacing:0.3px; }
+    header p{ margin:0; opacity:.95; font-size: clamp(16px, 2.2vw, 20px); }
+
+    .wrap{ max-width: 980px; margin: 0 auto; padding: 28px 20px; }
+
+    .card{
+      background:white; border-radius:16px; box-shadow: 0 8px 24px rgba(0,0,0,.08);
+      padding: 24px; margin: 20px 0;
+    }
+
+    .features{ display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:16px; }
+    .feature{ background:#fff; border-radius:14px; padding:16px; border:1px solid rgba(0,0,0,.06); display:flex; flex-direction:column; align-items:center; text-align:center; }
+    .feature img{ width:48px; height:48px; margin-bottom:8px; }
+    .feature h3{ margin: 0 0 6px; color: var(--dark); font-size: 18px; }
+
+    .cta{
+      background: var(--light); color:#0b2a14; padding: 18px; border-radius: 16px; text-align:center; font-weight:600; margin-top:20px;
+    }
+
+    .form-shell{ margin-top: 18px; }
+    .iframe-wrap{ position: relative; width: 100%; padding-top: 120%; background: #fff; border-radius: 16px; overflow: hidden; border: 1px solid rgba(0,0,0,.08); }
+    .iframe-wrap iframe{ position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+    footer{
+      margin-top: 40px; background:var(--ink); color: #fff; text-align:center; padding: 18px;
+      font-size: 14px;
+    }
+    .muted{ color: rgba(255,255,255,.8); }
+    a{ color: var(--light); text-decoration: none; }
+    .note{ font-size: 14px; color: #2a2a2a; opacity:.9; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jätteeks Jääny</h1>
+    <p>Kun jää ylimääräistä – me haetaan!</p>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2 style="color:var(--dark); margin-top:0">Liity sähköpostilistalle</h2>
+      <p>Saat ensimmäisenä tiedon tarjouksista, kierrätysvinkeistä ja uusista palveluista Oulun alueella.</p>
+
+      <div class="features">
+        <div class="feature">
+          <img src="https://img.icons8.com/fluency/48/sofa.png" alt="Sohva ikoni"/>
+          <h3>Nopeat tarjoukset</h3>
+          <div>Ajankohtaiset kampanjat ja edut suoraan sähköpostiisi.</div>
+        </div>
+        <div class="feature">
+          <img src="https://img.icons8.com/fluency/48/recycle.png" alt="Kierrätys ikoni"/>
+          <h3>Kierrätysvinkit</h3>
+          <div>Hyödyllisiä niksejä kodin järjestelyyn ja lajitteluun.</div>
+        </div>
+        <div class="feature">
+          <img src="https://img.icons8.com/fluency/48/wood.png" alt="Puujäte ikoni"/>
+          <h3>Paikallinen palvelu</h3>
+          <div>Ekologista ja ystävällistä noutoa Oulun seudulla.</div>
+        </div>
+      </div>
+
+      <div class="cta" role="status" aria-live="polite">Täytä lomake alle ja liity listalle</div>
+
+      <div class="form-shell">
+        <div class="iframe-wrap" aria-label="Jätteeks Jääny – liittymislomake">
+          <!-- Google Forms -upotus -->
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSchuzoSocsQqy8rhHXC4uUWfHe4GHgElfxmz2pZOaPCoaLuCg/viewform?embedded=true" title="Liittymislomake"></iframe>
+        </div>
+        <p class="note">Tietosi käsitellään luottamuksellisesti ja GDPR:n mukaisesti. Voit perua tilauksen milloin tahansa jokaisen sähköpostin peruutuslinkistä.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>Jätteeks Jääny – Oulu</div>
+    <div class="muted">Sähköposti: Ville.niinimaaa@gmail.com · <a href="/tietosuojaseloste.html">Tietosuojaseloste</a></div>
+  </footer>
+</body>
+</html>
